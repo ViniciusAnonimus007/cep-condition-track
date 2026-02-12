@@ -1,0 +1,137 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* BASE */
+body {
+  background: #f4f7f6;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: #2c3e50;
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+/* MAIN CENTRALIZADO */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* CARD PRINCIPAL */
+.container {
+  background: #fff;
+  width: 100%;
+  max-width: 620px;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+/* FORMULÁRIO */
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.questions div {
+  width: 100%;
+}
+
+/* LABEL */
+label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* INPUT */
+input[type="text"] {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+/* FOCO INPUT */
+input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 2px rgba(39, 174, 96, 0.15);
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  padding: 14px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+button:hover {
+  background: #219150;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* ÁREA DE RESPOSTA */
+.response-block textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #f9f9f9;
+  resize: vertical;
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+  background: #ececec;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+footer .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#profile {
+  width: 32px;
+  transition: transform 0.2s;
+}
+
+#profile:hover {
+  transform: scale(1.1);
+}

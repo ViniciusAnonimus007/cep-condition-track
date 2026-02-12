@@ -1,0 +1,49 @@
+/* Tablet e desktop pequeno */
+@media (min-width: 768px) {
+
+  .questions {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .questions > div {
+    flex: 1;
+  }
+
+  .container {
+    padding: 2.5rem;
+    max-width: 700px;
+  }
+
+}
+
+/* Desktop maior */
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 850px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+}
+
+/* Celulares pequenos */
+@media (max-width: 480px) {
+
+  header {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+}

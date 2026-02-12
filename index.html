@@ -1,44 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-bt">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Condição da rota</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./public/styles/style.css">
+  <link rel="stylesheet" href="./public/styles/mediaquerys.css">
 </head>
+
 <body>
   <header>
     <h1>Veja sua Rota</h1>
   </header>
+
   <main>
     <div class="container">
-      <div class="system-block">
+      <form class="system-block">
         <div class="questions">
-          <div id="origem">
-            <label>CEP de origem</label>
-            <input type="text" id="origin" placeholder="00000-000">
+
+          <div>
+            <label for="origin">CEP de origem</label>
+            <input
+              type="text"
+              id="origin"
+              name="origin"
+              placeholder="00000-000"
+              pattern="\d{5}-\d{3}"
+              inputmode="numeric"
+              maxlength="9"
+              required
+            >
           </div>
-        
-          <div id="send">
-            <label>CEP de destino</label>
-            <input type="text" id="send" placeholder="00000-000">
+
+          <div>
+            <label for="destination">CEP de destino</label>
+            <input
+              type="text"
+              id="destination"
+              name="destination"
+              placeholder="00000-000"
+              pattern="\d{5}-\d{3}"
+              inputmode="numeric"
+              maxlength="9"
+              required
+            >
           </div>
+
         </div>
-        <button>Descobrir</button>
-      </div>
+
+        <button type="submit">Descobrir</button>
+      </form>
+
       <div class="response-block">
-        <textarea id="response" readonly cols="30" rows="10"></textarea>
+        <textarea id="response" readonly rows="10"></textarea>
       </div>
     </div>
   </main>
-  
+
   <footer>
-  <div class="info">
-    <h5>site em desenvolvimento @2026</h5>
-    <a href="https://github.com/ViniciusAnonimus007" target="_blank"><img src="./public/github.png" alt="Meu github" id="profile"></a>
-  </div>
+    <div class="info">
+      <h5>Site em desenvolvimento ©2026</h5>
+      <a href="https://github.com/ViniciusAnonimus007" target="_blank">
+        <img src="./public/github.png" alt="Meu GitHub" id="profile">
+      </a>
+    </div>
   </footer>
-  
+
   <script src="./src/app.ts" type="module" defer></script>
+  <script src="./src/script.ts" type="module" defer></script>
 </body>
 </html>
