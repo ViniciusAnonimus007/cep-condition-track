@@ -16,18 +16,18 @@
         <div class="questions">
           <div id="origem">
             <label>CEP de origem</label>
-            <input type="text" id="origin">
+            <input type="text" id="origin" placeholder="00000-000">
           </div>
         
           <div id="send">
             <label>CEP de destino</label>
-            <input type="text" id="send">
+            <input type="text" id="send" placeholder="00000-000">
           </div>
         </div>
         <button>Descobrir</button>
       </div>
       <div class="response-block">
-        <textarea id="response" cols="30" rows="10"></textarea>
+        <textarea id="response" readonly cols="30" rows="10"></textarea>
       </div>
     </div>
   </main>
@@ -35,8 +35,10 @@
   <footer>
   <div class="info">
     <h5>site em desenvolvimento @2026</h5>
-    
+    <a href="https://github.com/ViniciusAnonimus007" target="_blank"><img src="./public/github.png" alt="Meu github" id="profile"></a>
   </div>
   </footer>
+  
+  <script src="./src/app.ts" type="module" defer></script>
 </body>
 </html>

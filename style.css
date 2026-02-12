@@ -109,3 +109,8 @@ footer {
     flex: 1; /* Divide o espaço igualmente */
   }
 }
+
+#profile {
+  width: 35px;
+  height: auto;
+}
